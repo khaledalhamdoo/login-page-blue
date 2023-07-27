@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(197, 154, 249, 0.142);
+    font-family: 'Poppins', sans-serif;
+}
+
+.parent{
+    width: 800px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50% , -50%);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.375);
+}
+
+.welcome-content{
+    width: 50%;
+    height: inherit;
+    float: left;
+    background-image: url(../images/back.png);
+    background-size: cover;
+}
+
+.login-content{
+    width: 50%;
+    height: inherit;
+    float: right;
+    background-color: white;
+}
+
+.welcome-content .logo{
+    margin: 25px;
+    color: white;
+}
+
+.welcome-content .welcome .nice-title{
+    color: white;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.welcome-content .welcome h1{
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+}
+
+.welcome-content .welcome .line{
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.welcome-content .welcome .ptitle{
+    text-align: center;
+    width: 60%;
+    font-size: 10px;
+    color: white;
+    margin: 0 auto;
+}
+
+.parent .login-content .login{
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+}
+.parent .login-content .login h3{
+    color: rgb(22, 106, 210);
+    margin: 90px 0 10px 0;
+}
+
+.parent .login-content .login p{
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.parent .login-content .login form .keep-ready .ready a{
+    text-decoration: none;
+    color: black;
+}
+
+.parent .login-content .login form .keep-ready .ready a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.parent .login-content .login form input[type=email] , [type=password]{
+    width: 100%;
+    height: 40px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(220, 220, 220, 0.352);
+    border-left: 5px solid blue;
+}
+
+
+.parent .login-content .login form input[type=email]{
+    margin: 20px 0 15px 0;
+}
+
+.parent .login-content .login form input[type=password]{
+    margin-bottom: 25px;
+}
+
+.parent .login-content .login form input[type=submit]{
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: rgb(22, 106, 210);
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 500ms;
+}
+
+.parent .login-content .login form input[type=submit]:hover{
+    background-color: rgb(141, 145, 222);
+    cursor: pointer;
+    color: black;
+    transform: scale(1.1);
+}
+
+.parent .login-content .login form .keep-ready{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+
+
+
+/* Responcive */
+
+@media (max-width:800px){
+
+    .welcome-content{
+        display: none;
+    }
+
+    .login-content{
+        width: 100%;
+    }
+
+    .parent{
+        width: 90%;
+    }
+
+    @media (max-width:360px){
+        .parent .login-content .login form .keep-ready .keep{
+            display: block;
+        }
+    }
+
+
+}
